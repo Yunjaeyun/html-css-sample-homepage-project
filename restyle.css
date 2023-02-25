@@ -79,7 +79,7 @@
     display: flex;
     justify-content: flex-end;
     line-height: 86px;
-    width: 980px;   /*calc(1280px-300px) 안되서걍함*/
+    width: 980px;   /*calc(1280px-300px) 
     /* background-color: blue; */
 
 }
@@ -92,11 +92,11 @@
 }
 
 .amount{
-    position: relative; /* 이게필요할까? */
+    position: relative; /*  */
     top:-66px;
     display: flex;
     width: 1280px;
-    background: #fff;   /*red 빼주기*/
+    background: #fff;   /**/
     margin: auto;
     box-shadow: 0px 0px 100px rgba(0,0,0,0.1);   /*그림자*/
     /*px 1번째:우측에 박스새도우(-붙이면 좌측), 2번째:아래에 박스새도우, 3번째: 흐려지는역할*/
@@ -120,7 +120,7 @@
     /* margin-right: 86px; */
     /* border-right: 1px solid gray; */
 }
-/* 여기가 문제였구나. 그 ||이거 작대기 표시안뜬게 */
+/*  */
 
 .amount>li:not(:last-child) >div{
     border-right: 2px solid gray;
@@ -153,14 +153,14 @@
     width:100%;
     height: 601px;
     background: #f1f2f3;
-    margin-top: -132px;                            /*진짜 잡아 땡겨야됨. 그뒤에것들이 밀리지않게position쓰면 그 밑에 애들도 다 position써야됨.*/
+    margin-top: -132px;                            /*position x.*/
 }
 
 .main_text0 > h1{
     font-size: 48px;
     font-weight: lighter;
-    padding-top: 116px;                    /*margin-top 쓰면 하늘색칸도 같이 내려옴*/
-    text-align: center;                 /*글자크기 빼니까되네 ㅅㅂ아 글자크기는 font-size지..width height가 아니라*/
+    padding-top: 116px;                    /*margin-top x*/
+    text-align: center;                
     /* background-color: skyblue; */
 }
 
@@ -169,7 +169,7 @@
 }
 
 
-/*flex를 써야할것가타. 3개짜리  */
+/*flex  */
 .icons{
     display: flex;  /* 블록태그->>inline태그 */
     width:1280px;
@@ -180,7 +180,7 @@
 
 }
 .icons >li{
-    flex:1; /*자식요소들 공평하게 1자리식*/
+    flex:1; /*자식요소들 공평하게 1자리*/
     background: white;
     height: 302px;
     margin-top: 49px;
@@ -227,7 +227,7 @@
 .main_text1>h1{
     text-align: center;
     /* background-color: red; */
-    padding-top: 50px;      /*padding으로 밀어내기  -스킬  */
+    padding-top: 50px;      /*padding으로 밀어내기  */
 }
 
 .main_text1>.contents1{
@@ -242,26 +242,13 @@
     display:flex;
     margin:49px auto;
     /* background-color: skyblue; */
-    /* padding-top: 49px; ㄱㅊ margin으로 ㄱ */
+    /* padding-top: 49px;  */
 
 }
 
 .main_text1 > .service >.contents2{
     font-size: 18px;
 }
-
-/* .food_photo{
-    width: 640px;
-    height: 426px;
-}  안먹네..잘못불러옴 */
-
-/* .service>.food_photo{
-    width: 640px;
-} */
-
-/* .main_text1 >.service > .food_photo{
-    width: 640px;
-} */
 
 
 .service > .contents2{
@@ -273,7 +260,7 @@
     margin-bottom: 27px;
 }
 
-/* 결국..photo,, */
+
 /* --------------------------------------------------------- */
 
 .main_text2{
@@ -305,7 +292,7 @@
 /* 버튼만들때 줄높이맞추기 */
     margin: 16px auto;/* not text-align: center; */
     border: 1px solid white;
-    cursor: pointer; /* 버튼느낌 */
+    cursor: pointer; /* 버튼 */
 
 }
 
