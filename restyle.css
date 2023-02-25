@@ -1,0 +1,333 @@
+*{
+    font-family: 'Gothic A1', sans-serif;
+    list-style:none;
+    text-decoration : none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding:0px;
+    color: #000
+}
+
+.h1{
+    font-size: 42px;
+    font-weight: 100;
+}
+
+
+
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents2{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contents1_light{
+    font-size: 14px;
+    font-weight: lighter;
+}
+/*--------------------공통--------------------------*/
+.intro_bg{
+    background-image: url("image/intro.png");
+    width: 100%;
+    height: 718px;
+
+}
+
+.header{
+    display: flex;
+    width:1280px;
+    margin:auto;
+    /* background-color: red; */
+    height:86px;
+}
+
+.searchArea{
+    width: 300px;
+    background-color: green;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 24px;
+    background:rgba(0,0,0,0.5);
+
+}
+
+.searchArea > form > input{
+    border: none;
+    background: rgba(0,0,0,0.0);
+    width: 250px;
+    height: 40px;
+    padding-left: 10px; 
+    color: #fff;
+    /* background-color: green; */
+}
+
+.searchArea > form > span{
+    width:50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: 980px;   /*calc(1280px-300px) 안되서걍함*/
+    /* background-color: blue; */
+
+}
+
+.nav> li{
+    margin-left: 84px;
+}
+.nav> li>a{
+    color:white;
+}
+
+.amount{
+    position: relative; /* 이게필요할까? */
+    top:-66px;
+    display: flex;
+    width: 1280px;
+    background: #fff;   /*red 빼주기*/
+    margin: auto;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.1);   /*그림자*/
+    /*px 1번째:우측에 박스새도우(-붙이면 좌측), 2번째:아래에 박스새도우, 3번째: 흐려지는역할*/
+    /* rgba opacity 10% */
+}
+
+
+.amount>li{
+    flex:1;
+    /* background-color: blue; */
+    height: 132px;
+}
+
+.amount>li>div{
+    text-align: center;
+    /* background-color: green; */
+    height:57px;
+    /* margin-left: 86px; */
+    /* margin-bottom: 38px; */
+    margin-top:37px ;
+    /* margin-right: 86px; */
+    /* border-right: 1px solid gray; */
+}
+/* 여기가 문제였구나. 그 ||이거 작대기 표시안뜬게 */
+
+.amount>li:not(:last-child) >div{
+    border-right: 2px solid gray;
+}
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto;  /*상 우 하 좌(순서)*/
+    text-align: center;
+    /* font-weight:lighter; ? */
+}
+
+.intro_text>h1{
+    font-size: 48px;
+}
+
+.intro_text>h4{
+    font-size: 20px;
+}
+
+.intro_text>h1,
+.intro_text>h4{
+    color:#fff;
+
+}
+
+
+/* main_text0 */
+.main_text0{
+    width:100%;
+    height: 601px;
+    background: #f1f2f3;
+    margin-top: -132px;                            /*진짜 잡아 땡겨야됨. 그뒤에것들이 밀리지않게position쓰면 그 밑에 애들도 다 position써야됨.*/
+}
+
+.main_text0 > h1{
+    font-size: 48px;
+    font-weight: lighter;
+    padding-top: 116px;                    /*margin-top 쓰면 하늘색칸도 같이 내려옴*/
+    text-align: center;                 /*글자크기 빼니까되네 ㅅㅂ아 글자크기는 font-size지..width height가 아니라*/
+    /* background-color: skyblue; */
+}
+
+.main_text0>.contents2{
+    text-align: center;
+}
+
+
+/*flex를 써야할것가타. 3개짜리  */
+.icons{
+    display: flex;  /* 블록태그->>inline태그 */
+    width:1280px;
+    height: 302px;  
+    background-color: #f1f2f3;
+    margin:auto;
+    
+
+}
+.icons >li{
+    flex:1; /*자식요소들 공평하게 1자리식*/
+    background: white;
+    height: 302px;
+    margin-top: 49px;
+    text-align: center; /*  */
+
+}
+.icons > li:not(:last-child){
+    margin-right: 20px;
+}
+
+.icons> li>.icon_img{
+    margin-top: 36px;
+}
+
+.contents3{
+    font-size: 13px; 
+    font-weight: 100;
+}
+
+.icons .contents3{  /* 점프 */
+    width: 180px;
+    margin: auto; /*  */
+    margin-top: 8px;
+} 
+
+.more{
+    width: 100px;
+    height: 30px;
+    background-color: #2F7AF4;
+    margin: auto;
+    margin: 20px auto;
+    color: white;
+    font-size: 12px;
+    line-height: 30px;  /* 글높이 */
+}
+/* ------------------------------------------------------------ */
+.main_text1{
+    width: 100%;
+    height: 659px;
+    /*text-align: center;*/
+}
+
+
+.main_text1>h1{
+    text-align: center;
+    /* background-color: red; */
+    padding-top: 50px;      /*padding으로 밀어내기  -스킬  */
+}
+
+.main_text1>.contents1{
+    text-align: center;
+}
+
+/* 서비스영역잡기 : 사진과 글 영역 선맞춰서. 그리고 flex로 자식두명*/
+
+.service{
+    width: 1280px;
+    height: 427px;
+    display:flex;
+    margin:49px auto;
+    /* background-color: skyblue; */
+    /* padding-top: 49px; ㄱㅊ margin으로 ㄱ */
+
+}
+
+.main_text1 > .service >.contents2{
+    font-size: 18px;
+}
+
+/* .food_photo{
+    width: 640px;
+    height: 426px;
+}  안먹네..잘못불러옴 */
+
+/* .service>.food_photo{
+    width: 640px;
+} */
+
+/* .main_text1 >.service > .food_photo{
+    width: 640px;
+} */
+
+
+.service > .contents2{
+    padding: 20px;
+    /* background-color: red; */
+}
+
+.service > .contents2 > h2{
+    margin-bottom: 27px;
+}
+
+/* 결국..photo,, */
+/* --------------------------------------------------------- */
+
+.main_text2{
+    width: 100%;
+    height: 510px;
+    background-image: url("image/contact.png");
+}
+
+.main_text2> ul{
+    display: flex;
+    padding-top: 138px;
+}
+
+.main_text2>ul>li{
+    flex:1;
+    text-align: center;
+}
+
+
+.main_text2>ul>li>div>h1,
+.main_text2>ul>li>div,
+.main_text2>ul>li>div >a{
+    color: white;
+}
+.more2{
+    width: 220px;
+    height: 40px;
+    line-height: 40px;  
+/* 버튼만들때 줄높이맞추기 */
+    margin: 16px auto;/* not text-align: center; */
+    border: 1px solid white;
+    cursor: pointer; /* 버튼느낌 */
+
+}
+
+footer{
+    background-color: #1F1F1F;
+    display: flex;
+    /* width: 100%; */
+    /* height: 244px; */
+    padding: 30px;  /*  */
+}
+
+footer> div:first-child{
+    flex:3;
+    color: white;
+    text-align: center;
+    /* background: red; */
+}
+
+
+footer> div:last-child{
+    flex:9;
+    color: white;
+
+    /* background: blue; */
+}
